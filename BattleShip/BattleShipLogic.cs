@@ -16,13 +16,24 @@ namespace BattleShip
         public BattleShipLogic()
         {
             SetPosition();
-            Console.WriteLine();
         }
         public void SetPosition()
         {
             var placeBattleShip = new Random();
             X_axis = placeBattleShip.Next(1, 11);
             Y_axis = placeBattleShip.Next(1, 11);
+            Console.WriteLine("Im working");
+        }
+
+        public bool FireShot(int x, int y)
+        {
+            var isAHit = x == X_axis && y == Y_axis;
+
+            if(isAHit)
+            {
+                 HitCount++;
+            }
+            return isAHit;
         }
 
      
