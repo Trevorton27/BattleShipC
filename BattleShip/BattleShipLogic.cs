@@ -16,6 +16,7 @@ namespace BattleShip
         public BattleShipLogic()
         {
             SetPosition();
+            FireShot(1, 2);
         }
         public void SetPosition()
         {
@@ -33,6 +34,8 @@ namespace BattleShip
             {
                  HitCount++;
             }
+
+            Console.Write("Im working too");
             return isAHit;
         }
 
