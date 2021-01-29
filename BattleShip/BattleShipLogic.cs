@@ -16,6 +16,7 @@ namespace BattleShip
         public BattleShipLogic()
         {
             SetPosition();
+            //test
             FireShot(1, 2);
         }
         public void SetPosition()
