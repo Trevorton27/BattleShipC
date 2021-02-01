@@ -24,7 +24,7 @@ namespace BattleShip
             var placeBattleShip = new Random();
             X_axis = placeBattleShip.Next(1, 11);
             Y_axis = placeBattleShip.Next(1, 11);
-            Console.WriteLine("Im working");
+          //  Console.WriteLine("Im working");
         }
 
         public bool FireShot(int x, int y)
@@ -36,7 +36,7 @@ namespace BattleShip
                  HitCount++;
             }
 
-            Console.Write("Im working too");
+            //Console.Write("Im working too");
             return isAHit;
         }
 
